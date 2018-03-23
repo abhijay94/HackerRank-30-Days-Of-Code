@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Day9 {
+public class Day09 {
 
     static int factorial(int n) {
         if (n <= 1) {

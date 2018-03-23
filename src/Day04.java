@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Day4 {
+public class Day04 {
 
     private static class Person {
         private int age;
