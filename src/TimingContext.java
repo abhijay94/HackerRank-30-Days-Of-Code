@@ -5,16 +5,16 @@ public class TimingContext {
     double elapsedTime;
 
     public TimingContext() {
-        this.tStart = System.currentTimeMillis();
+        this.tStart = System.nanoTime();
     }
 
     public void stop() {
-        this.tEnd = System.currentTimeMillis();
+        this.tEnd = System.nanoTime();
         long tDelta = tEnd - tStart;
-        this.elapsedTime = tDelta / 1000.0;
+        this.elapsedTime = tDelta / 1000000.0;
     }
 
     public String getElapsedTime() {
-        return elapsedTime + " seconds";
+        return elapsedTime + " milli seconds";
     }
 }
