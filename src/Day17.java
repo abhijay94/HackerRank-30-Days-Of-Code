@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Calculator {
+class Calculator1 {
     int power(int n, int p) throws Exception {
         int ans;
         if (n < 0 || p < 0) {
@@ -22,7 +22,7 @@ class Day17 {
 
             int n = in.nextInt();
             int p = in.nextInt();
-            Calculator myCalculator = new Calculator();
+            Calculator1 myCalculator = new Calculator1();
             try {
                 int ans = myCalculator.power(n, p);
                 System.out.println(ans);
