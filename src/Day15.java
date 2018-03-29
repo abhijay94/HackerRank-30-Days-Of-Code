@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
-class Node {
+class ListNode {
     int data;
-    Node next;
+    ListNode next;
 
-    Node(int d) {
+    ListNode(int d) {
         data = d;
         next = null;
     }
 }
 
 class Day15 {
-    public static Node insert(Node head, int data) {
+    public static ListNode insert(ListNode head, int data) {
         if (head == null) {
-            head = new Node(data);
+            head = new ListNode(data);
         } else {
-            Node temp = new Node(data);
-            Node iter = head;
+            ListNode temp = new ListNode(data);
+            ListNode iter = head;
             while (iter.next != null) {
                 iter = iter.next;
             }
@@ -25,8 +25,8 @@ class Day15 {
         return head;
     }
 
-    public static void display(Node head) {
-        Node start = head;
+    public static void display(ListNode head) {
+        ListNode start = head;
         while (start != null) {
             System.out.print(start.data + " ");
             start = start.next;
@@ -35,7 +35,7 @@ class Day15 {
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        Node head = null;
+        ListNode head = null;
         int N = sc.nextInt();
 
         while (N-- > 0) {
